@@ -13,6 +13,7 @@
 @property NSInteger *dieTwo;
 @property (weak, nonatomic) IBOutlet UILabel *dieOneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dieTwoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dieCall;
 
 @end
 
@@ -28,16 +29,28 @@
 
 }
 - (IBAction)rollDice:(id)sender {
-    self.dieOneLabel.text = @"One";
-    self.dieTwoLabel.text = @"Two";
-    NSLog(@"Dice are rolling");
-    self.dieTwoLabel.text = [NSString stringWithFormat:@"%i", [self randomNumberFactory]];
+    int dieOneActualVar = [self dieOneRandomNumberFactory];
+    int dieTwoActualVar = [self dieTwoRandomNumberFactory];
+    int diceTotal = dieOneActualVar + dieTwoActualVar;
+
+
+    self.dieOneLabel.text = [NSString stringWithFormat:@"%i", dieOneActualVar];
+    self.dieTwoLabel.text = [NSString stringWithFormat:@"%i", dieTwoActualVar];
+    self.dieCall.text = [NSString stringWithFormat:@"%i", diceTotal];
 }
 
-- (int)randomNumberFactory {
+- (int)dieOneRandomNumberFactory {
     int dieOneActual = arc4random_uniform(6) + 1;
     return dieOneActual;
 }
+
+- (int)dieTwoRandomNumberFactory {
+    int dieTwoActual = arc4random_uniform(6) + 1;
+    return dieTwoActual;
+}
+
+
+
 
 
 @end

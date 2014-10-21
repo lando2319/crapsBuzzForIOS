@@ -49,23 +49,40 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcK-hx-b87">
+                                <rect key="frame" x="279" y="219" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Call is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcc-Kb-E3r">
+                                <rect key="frame" x="258" y="180" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tqe-ro-pnD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="33" id="0BB-5q-g69"/>
                             <constraint firstAttribute="centerX" secondItem="bzv-bU-1md" secondAttribute="centerX" constant="75" id="4cY-L1-bOo"/>
+                            <constraint firstItem="kcc-Kb-E3r" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="116" id="C9i-75-cF5"/>
                             <constraint firstAttribute="centerX" secondItem="ZG0-Cd-kfR" secondAttribute="centerX" constant="75" id="EGS-FV-oDH"/>
+                            <constraint firstAttribute="centerX" secondItem="vcK-hx-b87" secondAttribute="centerX" id="Ga6-ON-cq0"/>
                             <constraint firstAttribute="centerY" secondItem="NQt-OL-MpN" secondAttribute="centerY" id="J5l-dk-c3P"/>
                             <constraint firstItem="bzv-bU-1md" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="33" id="JeT-Wr-Wg6"/>
                             <constraint firstAttribute="centerX" secondItem="ytX-c7-ApV" secondAttribute="centerX" constant="-75" id="KZ2-4m-tNV"/>
                             <constraint firstItem="ytX-c7-ApV" firstAttribute="top" secondItem="tqe-ro-pnD" secondAttribute="bottom" constant="16" id="WJt-G1-W3Q"/>
+                            <constraint firstAttribute="centerX" secondItem="kcc-Kb-E3r" secondAttribute="centerX" id="YNh-Vf-lMp"/>
                             <constraint firstAttribute="centerX" secondItem="tqe-ro-pnD" secondAttribute="centerX" constant="-75.5" id="lmp-NS-sks"/>
                             <constraint firstItem="ZG0-Cd-kfR" firstAttribute="top" secondItem="bzv-bU-1md" secondAttribute="bottom" constant="16" id="ser-ZZ-32R"/>
+                            <constraint firstItem="vcK-hx-b87" firstAttribute="top" secondItem="kcc-Kb-E3r" secondAttribute="bottom" constant="18" id="vNk-Dh-Xoq"/>
                             <constraint firstAttribute="centerX" secondItem="NQt-OL-MpN" secondAttribute="centerX" id="xwP-rp-F85"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pyv-da-Cua"/>
                     <connections>
+                        <outlet property="dieCall" destination="vcK-hx-b87" id="Acs-YO-MtW"/>
                         <outlet property="dieOneLabel" destination="ZG0-Cd-kfR" id="3Gc-5d-EXm"/>
                         <outlet property="dieTwoLabel" destination="ytX-c7-ApV" id="mft-bB-b0n"/>
                     </connections>

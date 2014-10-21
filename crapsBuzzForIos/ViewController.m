@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property NSInteger *dieOne;
+@property NSInteger *dieTwo;
+@property (weak, nonatomic) IBOutlet UILabel *dieOneLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dieTwoLabel;
 
 @end
 
@@ -21,7 +25,19 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
+- (IBAction)rollDice:(id)sender {
+    self.dieOneLabel.text = @"One";
+    self.dieTwoLabel.text = @"Two";
+    NSLog(@"Dice are rolling");
+    self.dieTwoLabel.text = [NSString stringWithFormat:@"%i", [self randomNumberFactory]];
+}
+
+- (int)randomNumberFactory {
+    int dieOneActual = arc4random_uniform(6) + 1;
+    return dieOneActual;
+}
+
 
 @end

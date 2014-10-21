@@ -21,6 +21,9 @@
                                 <state key="normal" title="Roll Dice">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollDice:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b9k-Ao-tyo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Die One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-bU-1md">
                                 <rect key="frame" x="194" y="97" width="62" height="21"/>
@@ -62,6 +65,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pyv-da-Cua"/>
+                    <connections>
+                        <outlet property="dieOneLabel" destination="ZG0-Cd-kfR" id="3Gc-5d-EXm"/>
+                        <outlet property="dieTwoLabel" destination="ytX-c7-ApV" id="mft-bB-b0n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

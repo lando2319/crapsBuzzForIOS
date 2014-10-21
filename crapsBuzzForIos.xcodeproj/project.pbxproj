@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCBFC3C919F6F7FF00FEB7B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3C819F6F7FF00FEB7B5 /* main.m */; };
+		CCBFC3CC19F6F7FF00FEB7B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3CB19F6F7FF00FEB7B5 /* AppDelegate.m */; };
+		CCBFC3CF19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3CD19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodeld */; };
+		CCBFC3D219F6F7FF00FEB7B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3D119F6F7FF00FEB7B5 /* ViewController.m */; };
+		CCBFC3D519F6F7FF00FEB7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBFC3D319F6F7FF00FEB7B5 /* Main.storyboard */; };
+		CCBFC3D719F6F7FF00FEB7B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBFC3D619F6F7FF00FEB7B5 /* Images.xcassets */; };
+		CCBFC3DA19F6F7FF00FEB7B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCBFC3D819F6F7FF00FEB7B5 /* LaunchScreen.xib */; };
+		CCBFC3E619F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3E519F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCBFC3E019F6F7FF00FEB7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCBFC3BB19F6F7FF00FEB7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCBFC3C219F6F7FF00FEB7B5;
+			remoteInfo = crapsBuzzForIos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCBFC3C319F6F7FF00FEB7B5 /* crapsBuzzForIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crapsBuzzForIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBFC3C719F6F7FF00FEB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBFC3C819F6F7FF00FEB7B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCBFC3CA19F6F7FF00FEB7B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCBFC3CB19F6F7FF00FEB7B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCBFC3CE19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = crapsBuzzForIos.xcdatamodel; sourceTree = "<group>"; };
+		CCBFC3D019F6F7FF00FEB7B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCBFC3D119F6F7FF00FEB7B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCBFC3D419F6F7FF00FEB7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCBFC3D619F6F7FF00FEB7B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCBFC3D919F6F7FF00FEB7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CCBFC3DF19F6F7FF00FEB7B5 /* crapsBuzzForIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crapsBuzzForIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBFC3E419F6F7FF00FEB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBFC3E519F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = crapsBuzzForIosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCBFC3C019F6F7FF00FEB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBFC3DC19F6F7FF00FEB7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCBFC3BA19F6F7FF00FEB7B5 = {
+			isa = PBXGroup;
+			children = (
+				CCBFC3C519F6F7FF00FEB7B5 /* crapsBuzzForIos */,
+				CCBFC3E219F6F7FF00FEB7B5 /* crapsBuzzForIosTests */,
+				CCBFC3C419F6F7FF00FEB7B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCBFC3C419F6F7FF00FEB7B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCBFC3C319F6F7FF00FEB7B5 /* crapsBuzzForIos.app */,
+				CCBFC3DF19F6F7FF00FEB7B5 /* crapsBuzzForIosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCBFC3C519F6F7FF00FEB7B5 /* crapsBuzzForIos */ = {
+			isa = PBXGroup;
+			children = (
+				CCBFC3CA19F6F7FF00FEB7B5 /* AppDelegate.h */,
+				CCBFC3CB19F6F7FF00FEB7B5 /* AppDelegate.m */,
+				CCBFC3D019F6F7FF00FEB7B5 /* ViewController.h */,
+				CCBFC3D119F6F7FF00FEB7B5 /* ViewController.m */,
+				CCBFC3D319F6F7FF00FEB7B5 /* Main.storyboard */,
+				CCBFC3D619F6F7FF00FEB7B5 /* Images.xcassets */,
+				CCBFC3D819F6F7FF00FEB7B5 /* LaunchScreen.xib */,
+				CCBFC3CD19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodeld */,
+				CCBFC3C619F6F7FF00FEB7B5 /* Supporting Files */,
+			);
+			path = crapsBuzzForIos;
+			sourceTree = "<group>";
+		};
+		CCBFC3C619F6F7FF00FEB7B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCBFC3C719F6F7FF00FEB7B5 /* Info.plist */,
+				CCBFC3C819F6F7FF00FEB7B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCBFC3E219F6F7FF00FEB7B5 /* crapsBuzzForIosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCBFC3E519F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m */,
+				CCBFC3E319F6F7FF00FEB7B5 /* Supporting Files */,
+			);
+			path = crapsBuzzForIosTests;
+			sourceTree = "<group>";
+		};
+		CCBFC3E319F6F7FF00FEB7B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCBFC3E419F6F7FF00FEB7B5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCBFC3C219F6F7FF00FEB7B5 /* crapsBuzzForIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBFC3E919F6F7FF00FEB7B5 /* Build configuration list for PBXNativeTarget "crapsBuzzForIos" */;
+			buildPhases = (
+				CCBFC3BF19F6F7FF00FEB7B5 /* Sources */,
+				CCBFC3C019F6F7FF00FEB7B5 /* Frameworks */,
+				CCBFC3C119F6F7FF00FEB7B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = crapsBuzzForIos;
+			productName = crapsBuzzForIos;
+			productReference = CCBFC3C319F6F7FF00FEB7B5 /* crapsBuzzForIos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCBFC3DE19F6F7FF00FEB7B5 /* crapsBuzzForIosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBFC3EC19F6F7FF00FEB7B5 /* Build configuration list for PBXNativeTarget "crapsBuzzForIosTests" */;
+			buildPhases = (
+				CCBFC3DB19F6F7FF00FEB7B5 /* Sources */,
+				CCBFC3DC19F6F7FF00FEB7B5 /* Frameworks */,
+				CCBFC3DD19F6F7FF00FEB7B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCBFC3E119F6F7FF00FEB7B5 /* PBXTargetDependency */,
+			);
+			name = crapsBuzzForIosTests;
+			productName = crapsBuzzForIosTests;
+			productReference = CCBFC3DF19F6F7FF00FEB7B5 /* crapsBuzzForIosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCBFC3BB19F6F7FF00FEB7B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "MIKE LAND";
+				TargetAttributes = {
+					CCBFC3C219F6F7FF00FEB7B5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					CCBFC3DE19F6F7FF00FEB7B5 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = CCBFC3C219F6F7FF00FEB7B5;
+					};
+				};
+			};
+			buildConfigurationList = CCBFC3BE19F6F7FF00FEB7B5 /* Build configuration list for PBXProject "crapsBuzzForIos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCBFC3BA19F6F7FF00FEB7B5;
+			productRefGroup = CCBFC3C419F6F7FF00FEB7B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCBFC3C219F6F7FF00FEB7B5 /* crapsBuzzForIos */,
+				CCBFC3DE19F6F7FF00FEB7B5 /* crapsBuzzForIosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCBFC3C119F6F7FF00FEB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBFC3D519F6F7FF00FEB7B5 /* Main.storyboard in Resources */,
+				CCBFC3DA19F6F7FF00FEB7B5 /* LaunchScreen.xib in Resources */,
+				CCBFC3D719F6F7FF00FEB7B5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBFC3DD19F6F7FF00FEB7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCBFC3BF19F6F7FF00FEB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBFC3CF19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodeld in Sources */,
+				CCBFC3CC19F6F7FF00FEB7B5 /* AppDelegate.m in Sources */,
+				CCBFC3D219F6F7FF00FEB7B5 /* ViewController.m in Sources */,
+				CCBFC3C919F6F7FF00FEB7B5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBFC3DB19F6F7FF00FEB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBFC3E619F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCBFC3E119F6F7FF00FEB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCBFC3C219F6F7FF00FEB7B5 /* crapsBuzzForIos */;
+			targetProxy = CCBFC3E019F6F7FF00FEB7B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCBFC3D319F6F7FF00FEB7B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCBFC3D419F6F7FF00FEB7B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCBFC3D819F6F7FF00FEB7B5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCBFC3D919F6F7FF00FEB7B5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCBFC3E719F6F7FF00FEB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCBFC3E819F6F7FF00FEB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCBFC3EA19F6F7FF00FEB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = crapsBuzzForIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCBFC3EB19F6F7FF00FEB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = crapsBuzzForIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCBFC3ED19F6F7FF00FEB7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = crapsBuzzForIosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crapsBuzzForIos.app/crapsBuzzForIos";
+			};
+			name = Debug;
+		};
+		CCBFC3EE19F6F7FF00FEB7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = crapsBuzzForIosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crapsBuzzForIos.app/crapsBuzzForIos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCBFC3BE19F6F7FF00FEB7B5 /* Build configuration list for PBXProject "crapsBuzzForIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBFC3E719F6F7FF00FEB7B5 /* Debug */,
+				CCBFC3E819F6F7FF00FEB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCBFC3E919F6F7FF00FEB7B5 /* Build configuration list for PBXNativeTarget "crapsBuzzForIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBFC3EA19F6F7FF00FEB7B5 /* Debug */,
+				CCBFC3EB19F6F7FF00FEB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCBFC3EC19F6F7FF00FEB7B5 /* Build configuration list for PBXNativeTarget "crapsBuzzForIosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBFC3ED19F6F7FF00FEB7B5 /* Debug */,
+				CCBFC3EE19F6F7FF00FEB7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCBFC3CD19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCBFC3CE19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodel */,
+			);
+			currentVersion = CCBFC3CE19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodel */;
+			path = crapsBuzzForIos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CCBFC3BB19F6F7FF00FEB7B5 /* Project object */;
+}

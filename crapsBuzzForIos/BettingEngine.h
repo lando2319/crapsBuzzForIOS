@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface BettingEngine : NSObject
-@property NSObject *totalOfDice;
 
 +(NSArray *)rollDiceActual;
-+(void)evaluateTheField;
++(void)evaluateTheField:(int)totalOfDice;
 
 @end

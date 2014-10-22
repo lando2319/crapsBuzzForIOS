@@ -25,20 +25,19 @@
     NSInteger dieAsNSIntegerTwo = (NSInteger) dieAsIntTwo;
 
     NSArray *diceHolder = [NSArray arrayWithObjects:@(dieAsNSIntegerOne), @(dieAsNSIntegerTwo), @(totalOfDiceAsNSInteger), nil];
-    [self evaluateTheField];
+    [self evaluateTheField:(totalOfDiceAsInt)];
     return diceHolder;
 }
 
-+(void)evaluateTheField{
++(void)evaluateTheField:(int)totalOfDice{
     NSArray *fieldWinners = [FieldBet fieldWinners];
     NSLog(@"%@", fieldWinners);
-    NSObject *totalOfDice = @(12);
-    NSLog(@"%@", totalOfDice);
+    NSLog(@"%i", totalOfDice);
 
     for (NSObject *currentFieldNumber in fieldWinners) {
-        if ([currentFieldNumber isEqual: totalOfDice]) {
-            NSLog(@"here I am");
-        }
+//        if ([currentFieldNumber isEqual: totalOfDice]) {
+//            NSLog(@"here I am");
+//        }
     }
 }
 

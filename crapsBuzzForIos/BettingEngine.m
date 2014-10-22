@@ -34,10 +34,11 @@
     NSLog(@"%@", fieldWinners);
     NSLog(@"%i", totalOfDice);
 
+
     for (NSObject *currentFieldNumber in fieldWinners) {
-//        if ([currentFieldNumber isEqual: totalOfDice]) {
-//            NSLog(@"here I am");
-//        }
+        if (true) {
+            NSLog(@"%@", currentFieldNumber);
+        }
     }
 }
 

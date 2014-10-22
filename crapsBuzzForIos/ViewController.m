@@ -36,6 +36,8 @@
     self.dieTwoLabel.text = [NSString stringWithFormat:@"%@", diceRoll[1]];
     self.dieOneLabel.text = [NSString stringWithFormat:@"%@", diceRoll[0]];
 
+    self.dieCall.text = [NSString stringWithFormat:@"%@", diceRoll[2]];
+
     NSLog(@"%@", diceRoll);
 }
 

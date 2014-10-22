@@ -14,10 +14,13 @@
 +(NSArray *)rollDiceActual {
     int dieAsIntOne = arc4random_uniform(6) + 1;
     int dieAsIntTwo = arc4random_uniform(6) + 1;
+    int totalOfDiceAsInt = dieAsIntTwo + dieAsIntOne;
+
+    NSInteger totalOfDiceAsNSInteger = (NSInteger) totalOfDiceAsInt;
     NSInteger dieAsNSIntegerOne = (NSInteger) dieAsIntOne;
     NSInteger dieAsNSIntegerTwo = (NSInteger) dieAsIntTwo;
 
-    NSArray *diceHolder = [NSArray arrayWithObjects:@(dieAsNSIntegerOne), @(dieAsNSIntegerTwo), nil];
+    NSArray *diceHolder = [NSArray arrayWithObjects:@(dieAsNSIntegerOne), @(dieAsNSIntegerTwo), @(totalOfDiceAsNSInteger), nil];
     [self evaluateTheField];
     return diceHolder;
 }

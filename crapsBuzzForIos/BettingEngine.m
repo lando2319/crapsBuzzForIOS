@@ -9,6 +9,10 @@
 #import "BettingEngine.h"
 #import "FieldBet.h"
 
+//@interface BettingEngine ()
+//
+//@end
+
 @implementation BettingEngine
 
 +(NSArray *)rollDiceActual {
@@ -28,9 +32,13 @@
 +(void)evaluateTheField{
     NSArray *fieldWinners = [FieldBet fieldWinners];
     NSLog(@"%@", fieldWinners);
+    NSObject *totalOfDice = @(12);
+    NSLog(@"%@", totalOfDice);
 
     for (NSObject *currentFieldNumber in fieldWinners) {
-        NSLog(@"fieldWinner");
+        if ([currentFieldNumber isEqual: totalOfDice]) {
+            NSLog(@"here I am");
+        }
     }
 }
 

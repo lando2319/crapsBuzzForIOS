@@ -11,5 +11,6 @@
 @interface BettingEngine : NSObject
 
 +(NSArray *)rollDiceActual;
++(void)evaluateTheField;
 
 @end

@@ -10,7 +10,6 @@
 
 @interface BettingEngine : NSObject
 
-+(int)dieTwoRandomNumberFactory;
 +(NSArray *)rollDiceActual;
 
 @end

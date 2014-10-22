@@ -11,46 +11,15 @@
 
 @implementation BettingEngine
 
-+(int)dieTwoRandomNumberFactory {
-    int dieTwoActual = arc4random_uniform(6) + 1;
-    return dieTwoActual;
-}
-
 +(NSArray *)rollDiceActual {
 
-    int diceAsInt = arc4random_uniform(6) + 1;
-    NSInteger diceAsNSInteger = (NSInteger) diceAsInt;
+    int dieAsIntOne = arc4random_uniform(6) + 1;
+    int dieAsIntTwo = arc4random_uniform(6) + 1;
+    NSInteger dieAsNSIntegerOne = (NSInteger) dieAsIntOne;
+    NSInteger dieAsNSIntegerTwo = (NSInteger) dieAsIntTwo;
 
-    NSLog(@"%ld", diceAsNSInteger);
-
-    NSObject *dieOneActual = @2;
-    NSObject *dieTwoActual = @1;
-
-    NSArray *diceHolder = [NSArray arrayWithObjects:dieOneActual, dieTwoActual, nil];
+    NSArray *diceHolder = [NSArray arrayWithObjects:@(dieAsNSIntegerOne), @(dieAsNSIntegerTwo), nil];
     return diceHolder;
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @end

@@ -24,31 +24,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
 }
+
 - (IBAction)rollDice:(id)sender {
-    int dieOneActualVar = [self dieOneRandomNumberFactory];
-    int dieTwoActualVar = [BettingEngine dieTwoRandomNumberFactory];
-
-    self.dieOneLabel.text = [NSString stringWithFormat:@"%i", dieOneActualVar];
-    self.dieTwoLabel.text = [NSString stringWithFormat:@"%i", dieTwoActualVar];
-
     NSArray *diceRoll = [BettingEngine rollDiceActual];
 
+    self.dieTwoLabel.text = [NSString stringWithFormat:@"%@", diceRoll[1]];
+    self.dieOneLabel.text = [NSString stringWithFormat:@"%@", diceRoll[0]];
+
+    NSLog(@"%@", diceRoll);
 }
-
-- (int)dieOneRandomNumberFactory {
-    int dieOneActual = arc4random_uniform(6) + 1;
-    return dieOneActual;
-}
-
-
-
 
 
 

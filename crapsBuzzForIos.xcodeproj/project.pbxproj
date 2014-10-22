@@ -15,6 +15,8 @@
 		CCBFC3D719F6F7FF00FEB7B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBFC3D619F6F7FF00FEB7B5 /* Images.xcassets */; };
 		CCBFC3DA19F6F7FF00FEB7B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCBFC3D819F6F7FF00FEB7B5 /* LaunchScreen.xib */; };
 		CCBFC3E619F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3E519F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m */; };
+		CCBFC3F419F714C100FEB7B5 /* BettingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3F319F714C100FEB7B5 /* BettingEngine.m */; };
+		CCBFC3F719F715E900FEB7B5 /* FieldBet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFC3F619F715E900FEB7B5 /* FieldBet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		CCBFC3DF19F6F7FF00FEB7B5 /* crapsBuzzForIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crapsBuzzForIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBFC3E419F6F7FF00FEB7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCBFC3E519F6F7FF00FEB7B5 /* crapsBuzzForIosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = crapsBuzzForIosTests.m; sourceTree = "<group>"; };
+		CCBFC3F219F714C100FEB7B5 /* BettingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BettingEngine.h; sourceTree = "<group>"; };
+		CCBFC3F319F714C100FEB7B5 /* BettingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BettingEngine.m; sourceTree = "<group>"; };
+		CCBFC3F519F715E900FEB7B5 /* FieldBet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldBet.h; sourceTree = "<group>"; };
+		CCBFC3F619F715E900FEB7B5 /* FieldBet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldBet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,11 @@
 			children = (
 				CCBFC3CA19F6F7FF00FEB7B5 /* AppDelegate.h */,
 				CCBFC3CB19F6F7FF00FEB7B5 /* AppDelegate.m */,
+				CCBFC3F519F715E900FEB7B5 /* FieldBet.h */,
+				CCBFC3F619F715E900FEB7B5 /* FieldBet.m */,
 				CCBFC3D019F6F7FF00FEB7B5 /* ViewController.h */,
+				CCBFC3F219F714C100FEB7B5 /* BettingEngine.h */,
+				CCBFC3F319F714C100FEB7B5 /* BettingEngine.m */,
 				CCBFC3D119F6F7FF00FEB7B5 /* ViewController.m */,
 				CCBFC3D319F6F7FF00FEB7B5 /* Main.storyboard */,
 				CCBFC3D619F6F7FF00FEB7B5 /* Images.xcassets */,
@@ -222,10 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBFC3F719F715E900FEB7B5 /* FieldBet.m in Sources */,
 				CCBFC3CF19F6F7FF00FEB7B5 /* crapsBuzzForIos.xcdatamodeld in Sources */,
 				CCBFC3CC19F6F7FF00FEB7B5 /* AppDelegate.m in Sources */,
 				CCBFC3D219F6F7FF00FEB7B5 /* ViewController.m in Sources */,
 				CCBFC3C919F6F7FF00FEB7B5 /* main.m in Sources */,
+				CCBFC3F419F714C100FEB7B5 /* BettingEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +428,7 @@
 				CCBFC3EB19F6F7FF00FEB7B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCBFC3EC19F6F7FF00FEB7B5 /* Build configuration list for PBXNativeTarget "crapsBuzzForIosTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				CCBFC3EE19F6F7FF00FEB7B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

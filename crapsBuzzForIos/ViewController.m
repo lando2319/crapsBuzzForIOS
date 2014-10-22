@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BettingEngine.h"
 
 @interface ViewController ()
 @property NSInteger *dieOne;
@@ -14,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *dieOneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dieTwoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dieCall;
+
+@property NSArray *diceRoll;
 
 @end
 
@@ -30,13 +33,13 @@
 }
 - (IBAction)rollDice:(id)sender {
     int dieOneActualVar = [self dieOneRandomNumberFactory];
-    int dieTwoActualVar = [self dieTwoRandomNumberFactory];
-    int diceTotal = dieOneActualVar + dieTwoActualVar;
-
+    int dieTwoActualVar = [BettingEngine dieTwoRandomNumberFactory];
 
     self.dieOneLabel.text = [NSString stringWithFormat:@"%i", dieOneActualVar];
     self.dieTwoLabel.text = [NSString stringWithFormat:@"%i", dieTwoActualVar];
-    self.dieCall.text = [NSString stringWithFormat:@"%i", diceTotal];
+
+    NSArray *diceRoll = [BettingEngine rollDiceActual];
+
 }
 
 - (int)dieOneRandomNumberFactory {
@@ -44,10 +47,6 @@
     return dieOneActual;
 }
 
-- (int)dieTwoRandomNumberFactory {
-    int dieTwoActual = arc4random_uniform(6) + 1;
-    return dieTwoActual;
-}
 
 
 

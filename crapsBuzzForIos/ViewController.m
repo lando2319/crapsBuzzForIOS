@@ -38,7 +38,7 @@
 
     self.dieCall.text = [NSString stringWithFormat:@"%@", diceRoll[2]];
 
-    NSLog(@"%@", diceRoll);
+//    NSLog(@"%@", diceRoll);
 }
 
 

@@ -31,13 +31,9 @@
 
 +(void)evaluateTheField:(int)totalOfDice{
     NSArray *fieldWinners = [FieldBet fieldWinners];
-    NSLog(@"%@", fieldWinners);
-    NSLog(@"%i", totalOfDice);
-
-
     for (NSObject *currentFieldNumber in fieldWinners) {
-        if (true) {
-            NSLog(@"%@", currentFieldNumber);
+        if ([NSNumber numberWithInt:totalOfDice] == currentFieldNumber) {
+            NSLog(@"winner");
         }
     }
 }

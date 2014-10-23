@@ -37,8 +37,8 @@
     self.dieOneLabel.text = [NSString stringWithFormat:@"%@", diceRoll[0]];
 
     self.dieCall.text = [NSString stringWithFormat:@"%@", diceRoll[2]];
-
-//    NSLog(@"%@", diceRoll);
+    NSNumber* tmpNumber = diceRoll[2];
+    [BettingEngine evaluateTheField:[tmpNumber integerValue]];
 }
 
 

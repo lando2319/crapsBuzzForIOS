@@ -15,7 +15,10 @@
 
 @implementation BettingEngine
 
-+(NSArray *)rollDiceActual {
+//+(NSArray *)rollDiceActual  (completion block that provides all the needed results {
+
+
++(NSArray *)rollDiceActual  {
     int dieAsIntOne = arc4random_uniform(6) + 1;
     int dieAsIntTwo = arc4random_uniform(6) + 1;
     int totalOfDiceAsInt = dieAsIntTwo + dieAsIntOne;
@@ -25,14 +28,18 @@
     NSInteger dieAsNSIntegerTwo = (NSInteger) dieAsIntTwo;
 
     NSArray *diceHolder = [NSArray arrayWithObjects:@(dieAsNSIntegerOne), @(dieAsNSIntegerTwo), @(totalOfDiceAsNSInteger), nil];
-    [self evaluateTheField:(totalOfDiceAsInt)];
+//    [self evaluateTheField:(totalOfDiceAsInt)];
     return diceHolder;
 }
 
-+(void)evaluateTheField:(int)totalOfDice{
++(void)evaluateTheField:(NSInteger)totalOfDice{
     NSArray *fieldWinners = [FieldBet fieldWinners];
-    for (NSObject *currentFieldNumber in fieldWinners) {
-        if ([NSNumber numberWithInt:totalOfDice] == currentFieldNumber) {
+
+
+
+
+    for (NSNumber *currentFieldNumber in fieldWinners) {
+        if (totalOfDice == [currentFieldNumber integerValue]) {
             NSLog(@"winner");
         }
     }

@@ -66,8 +66,11 @@
                                 <state key="normal" title="FIELD BET">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fieldButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qB0-z3-VaM"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5O-X1-rym">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5O-X1-rym">
                                 <rect key="frame" x="269" y="389" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -101,6 +104,8 @@
                         <outlet property="dieCall" destination="vcK-hx-b87" id="Acs-YO-MtW"/>
                         <outlet property="dieOneLabel" destination="ZG0-Cd-kfR" id="3Gc-5d-EXm"/>
                         <outlet property="dieTwoLabel" destination="ytX-c7-ApV" id="mft-bB-b0n"/>
+                        <outlet property="fieldBetAmount" destination="j5O-X1-rym" id="mnX-pV-yyL"/>
+                        <outlet property="fieldBetButton" destination="Akx-Y2-9q1" id="zBs-pa-VcQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

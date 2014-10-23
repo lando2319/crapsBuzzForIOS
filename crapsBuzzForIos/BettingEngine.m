@@ -28,21 +28,22 @@
     NSInteger dieAsNSIntegerTwo = (NSInteger) dieAsIntTwo;
 
     NSArray *diceHolder = [NSArray arrayWithObjects:@(dieAsNSIntegerOne), @(dieAsNSIntegerTwo), @(totalOfDiceAsNSInteger), nil];
-//    [self evaluateTheField:(totalOfDiceAsInt)];
+
     return diceHolder;
 }
 
 +(void)evaluateTheField:(NSInteger)totalOfDice{
     NSArray *fieldWinners = [FieldBet fieldWinners];
 
-
-
-
     for (NSNumber *currentFieldNumber in fieldWinners) {
         if (totalOfDice == [currentFieldNumber integerValue]) {
             NSLog(@"winner");
+        } else {
+            NSLog(@"loser");
         }
-    }
+    };
+
+
 }
 
 
